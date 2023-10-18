@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vacation Rental Property</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <style>
+        /* Basic styling for the vacation rental website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.property-listing {
+    text-align: center;
+    padding: 20px;
+}
+
+.property-listing img {
+    max-width: 100%;
+}
+
+.booking-form {
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Vacation Rental</h1>
+    </header>
+
+    <section class="property-listing">
+        <img src="property-image.jpg" alt="Vacation Rental Property">
+        <h2>Beachfront Villa</h2>
+        <p>Relax and unwind in this beautiful beachfront villa. Enjoy stunning ocean views and direct beach access.</p>
+        <p>Price: $200/night</p>
+        <button id="book-now">Book Now</button>
+    </section>
+
+    <section class="booking-form">
+        <h2>Book Your Stay</h2>
+        <form>
+            <label for="check-in-date">Check-In Date:</label>
+            <input type="date" id="check-in-date" required>
+
+            <label for="check-out-date">Check-Out Date:</label>
+            <input type="date" id="check-out-date" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" required>
+
+            <button type="submit" id="submit-booking">Submit Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vacation Rental Property</p>
+    </footer>
+
+    <script>
+        // JavaScript code to handle booking form submission
+document.addEventListener('DOMContentLoaded', function () {
+    const bookingForm = document.querySelector('form');
+    const submitButton = document.getElementById('submit-booking');
+
+    bookingForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // You can add code here to process the booking, e.g., send data to a server, show a confirmation message, etc.
+        alert('Your booking has been submitted!');
+    });
+});
+
+    </script>
+</body>
+</html>
